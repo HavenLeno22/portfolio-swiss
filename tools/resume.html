@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Haven Leno J, resume</title>
+<!-- Source for resume/Haven-Leno-J-Resume.pdf. Build with: python tools/build_resume.py -->
+<style>
+  @font-face { font-family: "SG"; src: url("../assets/fonts/schibsted-grotesk-normal.woff2") format("woff2"); font-weight: 400 900; }
+  @font-face { font-family: "SG"; src: url("../assets/fonts/schibsted-grotesk-italic.woff2") format("woff2"); font-weight: 400 900; font-style: italic; }
+  @page { size: A4; margin: 11mm 13mm 10mm; }
+  :root { --ink: #0b1530; --quiet: #555d72; --rule: #cfd3dc; --accent: #1238d6; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: "SG", Arial, sans-serif; color: var(--ink); font-size: 9pt; line-height: 1.34; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  a { color: inherit; text-decoration: none; }
+  h1, h2, h3, p, ul { margin: 0; }
+  ul { padding: 0; list-style: none; }
+
+  header { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 6mm; padding-bottom: 3.2mm; border-bottom: 2.2pt solid var(--accent); }
+  h1 { font-size: 25pt; font-weight: 820; letter-spacing: -0.045em; line-height: 0.9; }
+  .role { margin-top: 1.6mm; font-size: 11pt; font-weight: 550; }
+  .contact { text-align: right; font-size: 8.6pt; line-height: 1.5; color: var(--quiet); }
+  .contact strong { color: var(--ink); font-weight: 600; }
+
+  .summary { margin-top: 3mm; font-size: 9.3pt; line-height: 1.4; }
+
+  section { margin-top: 3.2mm; }
+  h2 { font-size: 10.2pt; font-weight: 760; letter-spacing: -0.005em; color: var(--accent); padding-bottom: 1mm; border-bottom: 0.6pt solid var(--rule); margin-bottom: 1.8mm; }
+
+  .item + .item { margin-top: 2.1mm; }
+  .line { display: grid; grid-template-columns: 1fr auto; gap: 4mm; align-items: baseline; }
+  h3 { font-size: 9.8pt; font-weight: 720; }
+  h3 .what { font-weight: 450; }
+  .when { font-size: 8.6pt; color: var(--quiet); white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .sub { font-size: 8.6pt; color: var(--quiet); margin-top: 0.3mm; }
+  .item ul { margin-top: 1mm; }
+  .item li { position: relative; padding-left: 3.4mm; }
+  .item li + li { margin-top: 0.5mm; }
+  .item li::before { content: ""; position: absolute; left: 0.4mm; top: 0.62em; width: 1.6mm; height: 0.7pt; background: var(--ink); }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 0 7mm; }
+  .rows li { display: grid; grid-template-columns: 15mm 1fr; gap: 2.5mm; }
+  .rows li + li { margin-top: 0.8mm; }
+  .rows .k { color: var(--quiet); }
+  .rows--wide li { grid-template-columns: 27mm 1fr; }
+  .gh { color: var(--accent); }
+  .edu li + li { margin-top: 0.6mm; }
+  .edu li { display: grid; grid-template-columns: 1fr auto; gap: 4mm; }
+  .edu li + li { margin-top: 1.2mm; }
+  .edu .gpa { color: var(--quiet); font-size: 8.4pt; white-space: nowrap; }
+  .also { margin-top: 2.4mm; font-size: 8.9pt; }
+  .also strong { font-weight: 650; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Haven Leno J</h1>
+      <p class="role">Full-stack developer</p>
+    </div>
+    <p class="contact">
+      Chennai, India<!--PHONE--><br>
+      <strong><a href="mailto:havenleno2006@gmail.com">havenleno2006@gmail.com</a></strong><br>
+      <a href="https://havenleno22.github.io/">havenleno22.github.io</a><br>
+      <a href="https://www.linkedin.com/in/havenleno">linkedin.com/in/havenleno</a> &nbsp; <a href="https://github.com/HavenLeno22">github.com/HavenLeno22</a>
+    </p>
+  </header>
+
+  <p class="summary">Third-year computer science student who builds web applications end to end, from the database and API to the interface. Won the Implementation Category at Sensora 2.0, VIT Vellore, with SurgeGuard, a real-time crowd-safety platform, and completed a MERN stack internship at GenLab. Looking for a software engineering internship.</p>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="line"><h3>MERN Stack Developer Intern <span class="what">GenLab Pvt. Ltd., Nagercoil (on-site)</span></h3><span class="when">Jun 2026 to Aug 2026</span></div>
+      <ul>
+        <li>Worked on real-world web applications across the MERN stack: MongoDB, Express.js, React.js and Node.js.</li>
+        <li>Handled API integration and database management. Completion certificate GL/INT/26/183.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="item">
+      <div class="line"><h3>SurgeGuard <span class="what">Real-time crowd-safety platform, team project</span></h3><span class="when">2026</span></div>
+      <p class="sub">Python, YOLO, ByteTrack, FastAPI, WebSockets, SQLAlchemy, React, TypeScript, Arduino &nbsp; <a class="gh" href="https://github.com/HavenLeno22/surgeguard-crowd-safety">GitHub</a></p>
+      <ul>
+        <li>Won the Implementation Category at Sensora 2.0, graVITas '26, VIT Vellore.</li>
+        <li>Turns live camera feeds into an explainable 0 to 100 Crowd Stability Index from crowd density, movement suppression, exit congestion, opposing flow and rate of change, with plain guidance for operators.</li>
+        <li>FastAPI backend with real-time WebSockets and persisted history, a React and TypeScript command center, a phone alert app for security staff, and Arduino light and buzzer alerts over USB serial.</li>
+        <li>Covered by 492 automated tests: 405 backend, 72 dashboard and 15 alert app.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="line"><h3>RepX <span class="what">Live 1v1 fitness battles with verified reps</span></h3><span class="when">2026</span></div>
+      <p class="sub">React, TypeScript, NestJS, Socket.IO, Prisma, MediaPipe &nbsp; <a class="gh" href="https://github.com/HavenLeno22/RepX">GitHub</a></p>
+      <ul>
+        <li>60-second matches where pose estimation in the browser counts only valid reps; results settle ELO ratings like chess.</li>
+        <li>Matchmaking, leaderboards, tournaments and anti-cheat; seven exercises as plugins in an engine with 64 tests.</li>
+        <li>Accounts with email verification, Google and Apple sign-in, and refresh-token rotation with replay detection.</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="line"><h3>Multi-Mode AI Translator <span class="what">Languages, Morse code and voice, team project</span></h3><span class="when">2025</span></div>
+      <p class="sub">Python, Flask, Gemini API, Web Speech API, Tailwind CSS &nbsp; <a class="gh" href="https://github.com/HavenLeno22/multi-mode-ai-translator">GitHub</a></p>
+      <ul>
+        <li>Translates between 21 languages with the Gemini API, encodes and decodes Morse code with a tap pad, and takes voice input; the API key stays on the server.</li>
+      </ul>
+    </div>
+    <p class="also"><strong>Also:</strong> Anatomix AI, a 3D anatomy app (in progress); HealthSys EMR (course project); AgriTrace (hackathon project). Demos at havenleno22.github.io.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <ul class="rows rows--wide">
+      <li><span class="k">Languages</span><span>JavaScript, TypeScript, Python, Java, C++, SQL</span></li>
+      <li><span class="k">Frameworks</span><span>React, Node.js, Express, Spring Boot, NestJS, FastAPI, Flask</span></li>
+      <li><span class="k">Data and tools</span><span>MongoDB, Firebase, SQLite, Prisma, WebSockets and Socket.IO, Git, GitHub Actions</span></li>
+      <li><span class="k">AI and hardware</span><span>YOLO, ByteTrack, MediaPipe, Gemini API, Arduino</span></li>
+    </ul>
+  </section>
+
+  <section class="two">
+    <div>
+      <h2>Hackathons and awards</h2>
+      <ul class="rows">
+        <li><span class="k">Sep 2026</span><span><strong>Winner, Implementation Category</strong>, Sensora 2.0, VIT Vellore</span></li>
+        <li><span class="k">2026</span><span>Participant, Celestia 2.0, VIT Vellore</span></li>
+        <li><span class="k">2025</span><span>Participant, Hack To The Future, Easwari Engineering College</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Certifications</h2>
+      <ul class="rows">
+        <li><span class="k">2026</span><span>Internship completion, MERN Stack Development, GenLab</span></li>
+        <li><span class="k">2025</span><span>C++ Programming Course for Beginners, ScholarHat</span></li>
+        <li><span class="k">2024</span><span>The Complete 2024 Web Development Bootcamp, Udemy</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul class="edu">
+      <li><span><strong>B.Tech, Computer Science and Engineering</strong>, SRM Institute of Science and Technology, Ramapuram <span class="gpa">&nbsp; CGPA 7.78</span></span><span class="when">2024 to 2028</span></li>
+      <li><span>Higher Secondary (12th), CSI Matriculation Higher Secondary School, Kanyakumari</span><span class="when">2024</span></li>
+      <li><span>Secondary (10th), St. Francis Assisi Matriculation Higher Secondary School, Kanyakumari</span><span class="when">2022</span></li>
+    </ul>
+    <p class="also"><strong>Languages:</strong> English, Tamil</p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RepX, a case study by Haven Leno J</title>
+  <meta name="description" content="RepX turns bodyweight fitness into a ranked online sport: live 60-second battles where pose estimation in the browser counts only valid reps.">
+  <link rel="canonical" href="https://havenleno22.github.io/portfolio-swiss/work/repx/">
+  <meta name="theme-color" content="#fcfcfb">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://havenleno22.github.io/portfolio-swiss/work/repx/">
+  <meta property="og:title" content="RepX, a case study by Haven Leno J">
+  <meta property="og:description" content="Live 60-second fitness battles where the camera counts only valid reps.">
+  <meta property="og:image" content="https://havenleno22.github.io/portfolio-swiss/assets/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/portfolio-swiss/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/portfolio-swiss/assets/fonts/schibsted-grotesk-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/portfolio-swiss/assets/css/site.css">
+  <script>try{if(localStorage.getItem("theme")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
+  <script src="/portfolio-swiss/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="masthead">
+    <div class="wrap masthead__inner">
+      <a class="wordmark" href="/portfolio-swiss/">Haven Leno J</a>
+      <nav class="nav" aria-label="Sections">
+        <a href="/portfolio-swiss/#experience">Experience</a>
+        <a href="/portfolio-swiss/#work">Work</a>
+        <a href="/portfolio-swiss/#recognition">Awards</a>
+        <a href="/portfolio-swiss/#skills">Skills</a>
+        <a href="/portfolio-swiss/#about">About</a>
+        <a href="/portfolio-swiss/#contact">Contact</a>
+      </nav>
+      <div class="tools">
+        <button class="btn" type="button" data-open-brief><span class="label-long">30-second view</span><span class="label-short">30 sec</span></button>
+        <button class="btn" type="button" data-open-palette>
+          <svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M10.4 10.4L14 14" stroke="currentColor" stroke-width="1.6"/></svg>
+          <span class="visually-hidden">Search</span> <kbd class="kbd-hint">Ctrl K</kbd>
+        </button>
+        <button class="btn btn--icon" type="button" data-theme-toggle aria-label="Switch to dark theme">
+          <svg class="theme-icon--sun" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.5v1.6M8 12.9v1.6M1.5 8h1.6M12.9 8h1.6M3.4 3.4l1.1 1.1M11.5 11.5l1.1 1.1M3.4 12.6l1.1-1.1M11.5 4.5l1.1-1.1" stroke="currentColor" stroke-width="1.4"/><circle cx="8" cy="8" r="3" fill="currentColor"/></svg>
+          <svg class="theme-icon--moon" viewBox="0 0 16 16" aria-hidden="true"><path d="M13.6 10.2A6 6 0 0 1 5.8 2.4a6 6 0 1 0 7.8 7.8z" fill="currentColor"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="case-hero" aria-labelledby="title">
+      <div class="wrap grid">
+        <p class="crumb"><a href="/portfolio-swiss/#work">All work</a></p>
+        <h1 id="title">RepX</h1>
+        <p class="lede">Bodyweight fitness as a competitive online sport: live 60-second battles where the camera counts only valid reps.</p>
+        <dl class="facts">
+          <div><dt>Year</dt><dd>2026</dd></div>
+          <div><dt>Type</dt><dd>Full-stack web app, installable as a PWA</dd></div>
+          <div><dt>Built with</dt><dd>React, TypeScript, NestJS, Socket.IO, Prisma, MediaPipe</dd></div>
+          <div><dt>Status</dt><dd>Playable end to end; not yet deployed publicly</dd></div>
+        </dl>
+        <div class="links">
+          <a class="btn btn--solid" href="https://github.com/HavenLeno22/RepX" rel="noopener">Code on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap" aria-label="Screens">
+      <div class="shots">
+        <figure class="shot--wide">
+          <img src="/portfolio-swiss/assets/img/repx-onboarding.webp" width="1600" height="928" alt="RepX onboarding: Push-ups, but it counts for something. A battle card shows Rookie 14 against Opponent 11, with 60 seconds and most verified reps wins." fetchpriority="high">
+          <figcaption>Onboarding explains the whole game in one screen.</figcaption>
+        </figure>
+        <figure class="shot--wide">
+          <img src="/portfolio-swiss/assets/img/repx-home.webp" width="1600" height="928" alt="The RepX home screen with a 1198 rating, Silver rank, level progress, missions and the current season." loading="lazy">
+          <figcaption>Home, shown with a seeded demo account: rating, rank, progress, missions and the current season.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="idea">
+      <div class="wrap grid">
+        <header class="section__head"><h2 id="idea">The idea</h2></header>
+        <div class="section__body case-body">
+          <p>Home workouts are easy to skip and impossible to compare, because rep counts are self-reported. RepX makes every rep count by checking it, then turns the result into a rating you can climb.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="match">
+      <div class="wrap grid">
+        <header class="section__head"><h2 id="match">How a match works</h2></header>
+        <div class="section__body case-body">
+          <ol class="steps">
+            <li>Sign in and pick one of seven exercises: push-ups, pull-ups, squats, burpees, planks, sit-ups or jumping jacks.</li>
+            <li>Matchmaking pairs you with a real player near your rating.</li>
+            <li>For 60 seconds, pose estimation runs in each browser and counts only reps with valid form.</li>
+            <li>The player with more verified reps wins, and both ELO ratings move, just like in chess.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="built">
+      <div class="wrap grid">
+        <header class="section__head"><h2 id="built">What's built</h2></header>
+        <div class="section__body case-body">
+          <ul>
+            <li>Matchmaking, live camera matches, ELO settlement and leaderboards.</li>
+            <li>Tournaments with bracket logic, direct challenges, private rooms and friends.</li>
+            <li>Progression: XP, levels, missions, achievements and seasons.</li>
+            <li>Anti-cheat: voided matches don't count toward wins and losses.</li>
+            <li>Accounts with email verification, password reset, Google and Apple sign-in, refresh-token rotation with replay detection, and account deletion.</li>
+            <li>An installable PWA with an offline banner, packaged for Android as a Trusted Web Activity.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="stack">
+      <div class="wrap grid">
+        <header class="section__head"><h2 id="stack">How it's built</h2></header>
+        <div class="section__body case-body">
+          <p>A TypeScript monorepo in three packages. The React front end is a PWA. The NestJS API handles accounts and matches, with Socket.IO for live play, and Prisma over SQLite in development and PostgreSQL in production.</p>
+          <p>A shared package holds the logic both sides must agree on: the exercise engine, where each exercise is a plugin, plus progression and tournament brackets.</p>
+          <div class="figures">
+            <div><strong>7</strong><span>exercises, each a plugin</span></div>
+            <div><strong>64</strong><span>tests on the shared logic</span></div>
+            <div><strong>60s</strong><span>per battle</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="next">
+      <div class="wrap grid">
+        <header class="section__head"><h2 id="next">What's next</h2></header>
+        <div class="section__body case-body">
+          <p>Deploy the API and the PWA publicly, then release the Android build. The deployment guide, environment checks and health probes are already in the repo.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <a class="next" href="/portfolio-swiss/work/translator/"><span>Next project</span><strong>Multi-Mode AI Translator</strong></a>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; 2026 Haven Leno J</p>
+      <p>Last updated October 2026</p>
+    </div>
+  </footer>
+</body>
+</html>

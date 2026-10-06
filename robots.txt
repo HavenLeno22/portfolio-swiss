@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://havenleno22.github.io/portfolio-swiss/sitemap.xml
